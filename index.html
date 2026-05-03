@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VAKO | Premium Wallpapers</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="logo">Vako</div>
+    <nav class="categories">
+      <a class="category active" href="#">Amoled</a>
+      <a class="category inactive" href="#">Space</a>
+      <a class="category inactive" href="#">Abstract</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="grid">
+
+      <div class="wallpaper" onclick="openPopup('./wallpaper/amoled/amoled-architecture-dark-02.jpg')">
+        <img src="./wallpaper/amoled/amoled-architecture-dark-02.jpg" alt="Wallpaper">
+        <div class="wallpaper-hover-hint">Tap to view</div>
+      </div>
+
+      <div class="wallpaper" onclick="openPopup('./wallpaper/amoled/amoled-architecture-dark-03.jpg')">
+        <img src="./wallpaper/amoled/amoled-architecture-dark-03.jpg" alt="Wallpaper">
+        <div class="wallpaper-hover-hint">Tap to view</div>
+      </div>
+
+      <div class="wallpaper" onclick="openPopup('./wallpaper/amoled/amoled-architecture-dark-04.jpg')">
+        <img src="./wallpaper/amoled/amoled-architecture-dark-04.jpg" alt="Wallpaper">
+        <div class="wallpaper-hover-hint">Tap to view</div>
+      </div>
+
+      <div class="wallpaper" onclick="openPopup('./wallpaper/amoled/amoled-city-car-dark-03.jpg')">
+        <img src="./wallpaper/amoled/amoled-city-car-dark-03.jpg" alt="Wallpaper">
+        <div class="wallpaper-hover-hint">Tap to view</div>
+      </div>
+
+      <div class="wallpaper" onclick="openPopup('./wallpaper/amoled/amoled-city-dark-01.jpg')">
+        <img src="./wallpaper/amoled/amoled-city-dark-01.jpg" alt="Wallpaper">
+        <div class="wallpaper-hover-hint">Tap to view</div>
+      </div>
+
+      <div class="wallpaper" onclick="openPopup('./wallpaper/amoled/amoled-city-dark-02.jpg')">
+        <img src="./wallpaper/amoled/amoled-city-dark-02.jpg" alt="Wallpaper">
+        <div class="wallpaper-hover-hint">Tap to view</div>
+      </div>
+
+      <div class="wallpaper" onclick="openPopup('./wallpaper/amoled/amoled-city-dark-04.jpg')">
+        <img src="./wallpaper/amoled/amoled-city-dark-04.jpg" alt="Wallpaper">
+        <div class="wallpaper-hover-hint">Tap to view</div>
+      </div>
+
+      <div class="wallpaper" onclick="openPopup('./wallpaper/amoled/amoled-city-dark-05.jpg')">
+        <img src="./wallpaper/amoled/amoled-city-dark-05.jpg" alt="Wallpaper">
+        <div class="wallpaper-hover-hint">Tap to view</div>
+      </div>
+
+      <div class="wallpaper" onclick="openPopup('./wallpaper/amoled/amoled-city-dark-06.jpg')">
+        <img src="./wallpaper/amoled/amoled-city-dark-06.jpg" alt="Wallpaper">
+        <div class="wallpaper-hover-hint">Tap to view</div>
+      </div>
+
+      <div class="wallpaper" onclick="openPopup('./wallpaper/amoled/amoled-nature-dark-01.jpg')">
+        <img src="./wallpaper/amoled/amoled-nature-dark-01.jpg" alt="Wallpaper">
+        <div class="wallpaper-hover-hint">Tap to view</div>
+      </div>
+
+      <div class="wallpaper" onclick="openPopup('./wallpaper/amoled/amoled-nature-dark-02.jpg')">
+        <img src="./wallpaper/amoled/amoled-nature-dark-02.jpg" alt="Wallpaper">
+        <div class="wallpaper-hover-hint">Tap to view</div>
+      </div>
+
+      <div class="wallpaper" onclick="openPopup('./wallpaper/amoled/amoled-nature-dark-03.jpg')">
+        <img src="./wallpaper/amoled/amoled-nature-dark-03.jpg" alt="Wallpaper">
+        <div class="wallpaper-hover-hint">Tap to view</div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="popup-overlay" id="popupOverlay">
+
+    <div class="popup-card">
+
+
+      <button class="popup-close" id="popupClose">&#x2715;</button>
+
+
+      <div class="popup-image-wrap">
+        <img class="popup-image" id="popupImage" src="" alt="Wallpaper Preview">
+      </div>
+
+
+      <div class="popup-actions">
+        <a class="btn btn-preview" id="popupPreview" href="#" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7-1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+          Preview
+        </a>
+        <a class="btn btn-download" id="popupDownload" href="#" download>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3"/></svg>
+          Download
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src="./script.js"></script>
+</body>
+</html>
